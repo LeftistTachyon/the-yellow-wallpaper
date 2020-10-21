@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>The Yellow Wallpaper</title>
+	<style>
+	* {
+		font-family:"Segoe UI", sans-serif;
+		color: white;
+	}
+	#meme {
+		border-collapse: collapse;
+		border-spacing: 0;
+	}
+	#meme, #meme td {
+		border: 5px solid black;
+	}
+	pre {
+		font-family: "Consolas", monospace;
+		color: green;
+		background-color: #ff0a;
+		padding: 15px;
+	}
+	img {
+		display: block;
+	}
+	
+	button.expandable {
+		width: 100%;
+		padding: 5px;
+		background: #fff;
+		color: #000;
+		border: 2px solid #000;
+		display: block;
+	}
+
+	button.expandable:after {
+		content: attr(data-sign);
+		color: #000;
+		float: right;
+	}
+
+	.expand-content {
+		background: #000;
+		border: 1px solid #000;
+		padding: 5px;
+	}
+	</style>
+</head>
+<body style="background:url(wallpaper.jpg)">
+	<div style="text-align:center">
+		<h1>The Yellow Wallpaper</h1>
+		<h2>A tale of insanity by isolation</h2>
+	</div>
+	<table id="meme">
+		<tbody>
+			<tr>
+				<td><img src="chika1.jpg" alt="Happy chika.png" /></td>
+				<td><pre>> be sentenced to stay in a weird room
+> notice the weird wallpaper
+> everything is going to be ok</pre>
+					<button class="expandable" data-content="one">Click me for more information!</button>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2" class="expand-content" style="display:none;" id="one">
+					<p>The narrator is sentenced to a "rest cure," which was being "voluntarily" confined to a bed to try to treat a disease.</p>
+				</td>
+			</td>
+			<tr>
+				<td><img src="chika2.jpg" alt="Sweating chika.png" /></td>
+				<td><pre>> be sentenced to stay in a weird room
+> notice the weird wallpaper
+> everything is going to be ok</pre>
+					<button class="expandable" data-content="two">Click me for more information!</button>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2" class="expand-content" style="display:none;" id="two">
+					<p>The narrator is sentenced to a "rest cure," which was being "voluntarily" confined to a bed to try to treat a disease.</p>
+				</td>
+			</td>
+			<tr>
+				<td><img src="chika3.jpg" alt="Majorly sweating chika.png" /></td>
+				<td><pre>> be sentenced to stay in a weird room
+> notice the weird wallpaper
+> everything is going to be ok</pre>
+					<button class="expandable" data-content="three">Click me for more information!</button>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2" class="expand-content" style="display:none;" id="three">
+					<p>The narrator is sentenced to a "rest cure," which was being "voluntarily" confined to a bed to try to treat a disease.</p>
+				</td>
+			</td>
+			<tr>
+				<td><img src="chika4.jpg" alt="Fearful chika.png" /></td>
+				<td><pre>> be sentenced to stay in a weird room
+> notice the weird wallpaper
+> everything is going to be ok</pre>
+					<button class="expandable" data-content="four">Click me for more information!</button>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2" class="expand-content" style="display:none;" id="four">
+					<p>The narrator is sentenced to a "rest cure," which was being "voluntarily" confined to a bed to try to treat a disease.</p>
+				</td>
+			</td>
+		</tbody>
+	</table>
+	<script src="expandable.js"></script>
+</body>
+</html>
